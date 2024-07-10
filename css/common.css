@@ -1,0 +1,196 @@
+.wrapper {
+    width: 1242px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    height: 52px;
+    background-color: #333333;
+}
+
+.shortcut .wrapper {
+    height: 100%;
+}
+
+.shortcut .wrapper li {
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper li a {
+    padding: 0 18px;
+    border-right: 1px solid #dcdcdc;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #dcdcdc;
+    font-family: "Ping Fang SC";
+}
+
+.shortcut .wrapper li:nth-last-child(1) a {
+    padding-right: 0;
+    border: none;
+}
+
+.shortcut .wrapper .phone {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('../images/sprites.png');
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+
+
+.header {
+    height: 70px;
+    margin: 30px auto;
+    line-height: 70px;
+}
+
+.header img {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.header ul li {
+    float: left;
+    padding: 0 25px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #333333;
+    font-family: "Ping Fang SC";
+}
+
+.header ul li a {
+    padding: 7px 0;
+}
+
+.header ul li:hover a {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.header .search {
+    position: relative;
+    float: left;
+    margin-left: 55px;
+    margin-top: 24px;
+    width: 172px;
+    height: 30px;
+
+
+}
+
+.header .search input {
+    width: 172px;
+    height: 30px;
+    padding-left: 30px;
+    background-color: #27ba9a00;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.header input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.search_icon {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/sprites.png);
+    background-position: -79px -69px;
+}
+
+.header .cart {
+    position: relative;
+    margin-top: 28px;
+    margin-left: 15px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -119px -69px;
+}
+
+.header .cart .icon {
+    position: absolute;
+    top: -5px;
+    right: -9px;
+    width: 20px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #e26237;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Ping Fang SC";
+    text-align: center;
+    line-height: 15px;
+}
+
+.footer {
+    height: 342px;
+    background-color: #333333;
+}
+
+
+.footer .tedian{
+    height: 172px;
+    padding: 60px 38px 0 38px;
+}
+.footer .tedian li .icon {
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    background: url(../images/sprites.png);
+    vertical-align: middle;
+}
+.footer .tedian li:nth-child(2) .icon{
+    background-position: -130px 0px;
+}
+.footer .tedian li:nth-child(3) .icon{
+    background-position: -64px 0px;
+}
+.footer .tedian li {
+    float: left;
+    margin-right: 300px;
+    font-size: 28px;
+letter-spacing: 0px;
+color: #ffffff;
+font-weight: 300;
+font-family: "Ping Fang SC";
+}
+.footer .tedian li:nth-last-child(1){
+    margin-right: 0;
+}
+.footer .line{
+    width: 1393px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #434343;
+}
+.footer .link {
+    height: 168px;
+    text-align: center;
+    padding-top: 43px;
+    color: #999;
+}
+.footer .link ul {
+    display: inline-block;
+}
+.footer .link li {
+    float: left;
+}
+.footer .link li a {
+    padding: 0 10px;
+    color: #999;
+    border-right: 1px solid #999;
+}
+.footer .link li:nth-last-child(1) a{
+    border-right: none;
+}

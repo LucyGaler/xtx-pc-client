@@ -1,0 +1,288 @@
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.banner .wrapper .aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .wrapper .aside li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .wrapper .aside a {
+    position: relative;
+    display: block;
+    height: 50px;
+    padding-left: 35px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.banner .wrapper .aside a:hover {
+    background-color: #27ba9b;
+}
+
+.banner .wrapper .aside a::after {
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+
+.banner .wrapper .aside a span {
+    padding-left: 15px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 228px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url(../images/sprites.png);
+}
+
+/* background-position负责两件事
+改变箭头在盒子里的位置，改变精灵图的位置
+导致在精灵图中测量的位置不准确
+解决方案有两种：
+1、简单粗暴直接在浏览器调试工具中调合适的数值
+2、写标签的时候，a负责盒子，里面再添加一个span负责箭头 */
+.prev {
+    left: 260px;
+    background-position: 14px -60px;
+}
+
+.next {
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+.banner ol {
+    position: absolute;
+    left: 680px;
+    bottom: 32px;
+    height: 10px;
+}
+
+.banner ol li {
+    float: left;
+    margin-right: 25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.banner ol li.active {
+    background-color: #ffffff;
+}
+
+.goods .hd {
+    height: 112px;
+    line-height: 112px;
+}
+
+.goods .hd p {
+    float: left;
+    height: 112px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #333333;
+    font-family: "Ping Fang SC";
+}
+
+.goods .hd p span {
+    margin-left: 34px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #999999;
+    font-family: "Ping Fang SC";
+}
+
+.goods .hd a,
+.fresh .hd .more {
+    float: right;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #999999;
+    font-family: "Ping Fang SC";
+}
+
+.goods .hd a::after,
+.fresh .hd .more::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+
+.goods .bd li {
+    position: relative;
+    float: left;
+    width: 304px;
+    height: 410px;
+    margin-right: 8px;
+    background-color: white;
+    text-align: center;
+}
+
+.goods .bd li:last-child {
+    margin-right: 0;
+}
+
+.goods .bd li img {
+    width: 304px;
+}
+
+.goods .bd li p {
+    margin-top: 18px;
+
+    margin-bottom: 7px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #333333;
+    font-family: "Ping Fang SC";
+}
+
+.goods .bd li span {
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9a2e1f;
+    font-family: "Ping Fang SC";
+}
+
+.goods .bd li .price {
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #9a2e1f;
+    font-weight: 500;
+    font-family: "Ping Fang SC";
+}
+
+.goods .bd li div {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 3px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #27ba9b;
+    font-family: "Ping Fang SC";
+    line-height: 24px;
+}
+.fresh {
+    margin-bottom: 20px;
+}
+.fresh .hd {
+    height: 94px;
+    line-height: 94px;
+}
+
+.fresh .hd p {
+    float: left;
+    font-size: 29px;
+    color: #333333;
+}
+
+.fresh .hd .more {
+    float: right;
+}
+
+.fresh .hd ul {
+    float: right;
+    height: 94px;
+    margin-right: 60px;
+}
+
+.fresh .hd ul li {
+    float: left;
+    height: 94px;
+}
+
+.fresh .hd ul li a {
+    height: 30px;
+    padding: 3px 8px;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.fresh .hd ul li a:hover {
+    background-color: #27ba9b;
+    color: #fefbfc;
+}
+
+.fresh .bd .left {
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+
+.fresh .bd .right {
+    float: right;
+    width: 1000px;
+    height: 610px;
+    padding-left: 10px;
+}
+
+.fresh .bd .right li {
+    float: left;
+    width: 242px;
+    height: 302px;
+    margin-right: 7px;
+    background-color: #ffffff;
+    /* border: 2px solid #27ba9b; */
+    padding-left: 20px;
+}
+.fresh .bd .right li:nth-child(4n){
+    margin-right: 0;
+}
+.fresh .bd .right li:nth-child(-n+4){
+    margin-bottom: 5px;
+}
+.fresh .bd .right li img {
+    width: 205px;
+}
+.fresh .bd .right li p,
+.fresh .bd .right li span {
+    margin-left: 10px;
+}
+.fresh .bd .right li span {
+    color: #9a2e1f;
+}
+.fresh .bd .right li .price {
+    margin-left: 0;
+   font-size: 18px;
+}
